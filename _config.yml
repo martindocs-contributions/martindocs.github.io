@@ -1,5 +1,5 @@
 title: Git Workflows
-description: Practice Git Workflows.
+description: Development workflow for Gitflow, based on a feature branching approach.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-leap-day

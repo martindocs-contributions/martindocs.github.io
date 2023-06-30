@@ -1,12 +1,12 @@
-# Steps for Git Workflow:
-## Development workflow for Gitflow, based on a feature branching approach.
-
-### 1. Create a new Git repository and add the theme
+# Git Workflow
+## Steps:
+### 1. Create a new Git repository and add the theme for GitHub pages:
+- Create new repository, click `New repository` and type the name of repo. In order to have repository on GitHub pages the name of repo must be: `martindocs.github.io`
 - Add a new file `index.md` and include some markdown.
 - To create a theme for Github Pages, create an `_config.yml` file in the root directory and add the following text:
     
         title: Git Workflow
-        description: Structured approaches to code changes.
+        description: Development workflow for Gitflow.
         show_downloads: true
         google_analytics:
         theme: jekyll-theme-leap-day
@@ -24,7 +24,7 @@
         git clone https://github.com/martindocs/martindocs.github.io.git
 
 
-- Create a local `develop` branch that tracks the `Develop` branch on the shared repository:
+- Create a local `develop` branch that tracks the shared `develop` repository branch:
 
         git checkout -b develop origin/develop
 

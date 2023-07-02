@@ -56,7 +56,7 @@ When we get enough features we want merge with `main` branch then we need to:
 - next click again on the `develp` branch and type the name of the branch `release/1`.  
 - after that click on the `Create branch: release/1 from 'develop'`
 - we shouldn't do any major changes in that branch, but if we have some small changes we can do it
-- next we merge `reelase/1` branch with `main` branch. Follow the [STEP 4](#step-4) to acomplish this. Also, the pull request need to be set to:
+- next we merge `reelase/1` branch with `main` branch. Follow the [STEP 4 - Create a pull request](#step-4) to acomplish this. Also, the pull request need to be set to:
 
         main <- release/1
 
@@ -72,7 +72,14 @@ If at any point we need to do quick fixes to our code we should use/create hotfi
 - also do not forget we need to merge the hotfix changed to `develop` branch too.
 
 ## GitHub Workflow Steps:
+### 1. Have only one long lived branch:
 This workflow is used mostly when the code is being change offten. It's simillar to Gitflow, but it has less branches. 
 There is only one long live branch `main`, with additional `feature` branch. Each developer pull the changes from shared repository and localy create own `feature` branch to work on it. After they commit the changes they push them to the shared `feature` branch and create pull request. After the pull request is reviewed it's merged to `main` branch.
 
-- if we had `fetaure` and `release` branches we need delete them before. Also `develop` branch needs to be removed. Because it's protected branch we need to go to `Settings -> Branches -> Delete` and delete `develop` branch protection. 
+### 2. Have feature branch:
+- we should have only `fetaure` branches. 
+- follow the [STEP 3 - Development work on new features](#step-3) to create & commit any changes
+- then do [STEP 4 - Create a pull request](#step-4)
+- if we nned to do any hotfixes we just fix any isuees localy on the `feature` branch and push & pull request to shared repository.
+
+### 3. 

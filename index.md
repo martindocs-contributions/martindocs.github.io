@@ -10,8 +10,6 @@
         show_downloads: true
         google_analytics:
         theme: jekyll-theme-leap-day
-    
-
 
 ### 2. Create an additional branch:
 - To support Git workflow, we should have at least two long-lived branches: `main` which contains a copy of the production code, and `develop` for creating new features before merging with the `main` branch.
